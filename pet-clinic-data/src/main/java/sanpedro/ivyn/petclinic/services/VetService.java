@@ -1,13 +1,7 @@
 package sanpedro.ivyn.petclinic.services;
 
-import java.util.Set;
+import sanpedro.ivyn.petclinic.model.Vet;
 
-public interface VetService {
-
-    Vet findById(Long id);
-
-    Vet save(Vet vet);
-
-    Set<Owner> findAll();
+public interface VetService extends CrudService<Vet, Long> {
 
 }
